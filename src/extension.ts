@@ -63,7 +63,22 @@ function lireFichiersDuProjet(dirPath: string, basePath: string, depth = 0): str
     let content = '';
     // Dossiers et fichiers à ignorer absolument
     const dossiersAIgnorer = ['node_modules', '.git', 'dist', 'build', 'out', 'assets', 'images', '.vscode'];
-    const extensionsAutorisees = ['.ts', '.js', '.py', '.html', '.css', '.json', '.java', '.c', '.cpp', '.php'];
+    const extensionsAutorisees = [
+        // Web & Frontend (React, Vue, Svelte, etc.)
+        '.ts', '.tsx', '.js', '.jsx', '.html', '.css', '.scss', '.sass', '.less', '.vue', '.svelte',
+        
+        // Backend & Logiciel (Python, Java, C#, Go, Rust, Ruby...)
+        '.py', '.java', '.c', '.cpp', '.h', '.hpp', '.cs', '.go', '.rs', '.rb', '.php',
+        
+        // Mobile (iOS, Android, Flutter)
+        '.swift', '.kt', '.dart',
+        
+        // Scripts et Base de données
+        '.sh', '.bash', '.ps1', '.sql',
+        
+        // Configuration et Données (sans secrets)
+        '.json', '.yaml', '.yml', '.toml', '.xml', '.ini'
+    ];
 
     try {
         const items = fs.readdirSync(dirPath);
