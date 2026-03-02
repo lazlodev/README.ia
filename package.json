@@ -1,27 +1,42 @@
 {
   "name": "readme-ia",
   "displayName": "README.IA",
-  "description": "README.IA",
+  "description": "Générateur automatique de README propulsé par l'IA Google Gemini.",
   "version": "0.0.1",
+  "publisher": "DE FRUYTIER LAZLO",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LazloYnovLille/README.IA"
+  },
+  "keywords": [
+    "readme",
+    "ai",
+    "gemini",
+    "documentation",
+    "markdown"
+  ],
   "engines": {
     "vscode": "^1.109.0"
   },
   "categories": [
+    "Machine Learning",
     "Other"
   ],
   "activationEvents": [
-    "*"
+    "onStartupFinished"
   ],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
       {
         "command": "readme-gen.create",
-        "title": "Générer un Readme avec l'IA"
+        "title": "Generate README.md",
+        "category": "README.IA"
       },
       {
         "command": "readme-gen.resetKey",
-        "title": "Readme IA : Réinitialiser la clé API"
+        "title": "Reinitialize gemini key",
+        "category": "README.IA"
       }
     ]
   },
@@ -37,7 +52,7 @@
     "@types/mocha": "^10.0.10",
     "@types/node": "^22.19.13",
     "@types/vscode": "^1.109.0",
-    "@vscode/test-cli": "^0.0.12",
+    "@vscode/test-cli": "^0.0.11",
     "@vscode/test-electron": "^2.5.2",
     "eslint": "^9.39.2",
     "typescript": "^5.9.3",
