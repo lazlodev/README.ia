@@ -1,53 +1,61 @@
-# README.IA: Your AI-Powered README Generator for VS Code ✨
+# ✨ README.IA: Your AI-Powered README Generator for VS Code
 
-![Version](https://img.shields.io/badge/version-0.0.1-blue.svg)
-![VSCode Marketplace](https://img.shields.io/vscode/v/Lazlo.README.AI?color=blue&label=VSCode%20Marketplace)
-![Downloads](https://img.shields.io/vscode/downloads/Lazlo.README.AI?color=green)
-![GitHub stars](https://img.shields.io/github/stars/lazlodev/README.IA?style=social)
-![TypeScript](https://img.shields.io/badge/TypeScript-5.x-blue?logo=typescript)
-![Google Gemini AI](https://img.shields.io/badge/Powered%20by-Google%20Gemini%20AI-4285F4?logo=google)
+[![Version](https://img.shields.io/badge/version-0.0.3-blue.svg)](https://marketplace.visualstudio.com/items?itemName=lazlodev.readme-ia)
+[![VS Code Marketplace](https://img.shields.io/badge/VS%20Code%20Marketplace-Install%20Now-informational?logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=lazlodev.readme-ia)
+[![GitHub Repository](https://img.shields.io/badge/GitHub-Repository-brightgreen?logo=github)](https://github.com/lazlodev/README.IA)
 
----
+Elevate your project documentation instantly with **README.IA**, an innovative Visual Studio Code extension designed to automatically generate high-quality `README.md` files. Leveraging the power of Google Gemini's Artificial Intelligence, README.IA analyzes your project's codebase to craft comprehensive and visually appealing documentation, saving you valuable time and effort.
 
-**README.IA** is an innovative VS Code extension designed to revolutionize how you create `README.md` files. Leveraging the power of Google Gemini AI, it automatically generates comprehensive and insightful project documentation by analyzing your codebase. Say goodbye to manual `README` writing and hello to instant, high-quality documentation!
+## 🚀 Technologies
 
-## 🚀 Technologies Used
+*   **TypeScript** 📘: Primary language for robust and scalable development.
+*   **Node.js** 🟢: Runtime environment powering the extension.
+*   **Visual Studio Code API** 💻: For seamless integration within the VS Code ecosystem.
+*   **Google Gemini API** ✨: The intelligent core for code analysis and README generation.
+*   **ESLint** 🧹: For maintaining code quality and consistency.
+*   **Markdown** 📝: The standard format for the generated READMEs.
 
-*   `TypeScript` 🟦: The primary language for robust and scalable extension development.
-*   `Node.js` 🟢: The JavaScript runtime environment powering the extension.
-*   `VS Code API` 💻: For seamless integration and interaction within the Visual Studio Code ecosystem.
-*   `Google Gemini AI` 🧠: The intelligent core for advanced code analysis and sophisticated Markdown generation.
-*   `npm` 📦: Utilized for efficient package management and project scripting.
+## ✨ Features
 
-## ✨ Main Features
-
-*   **AI-Powered Generation** ✨: Automatically creates a detailed `README.md` by intelligently analyzing your project's source code using Google Gemini AI.
-*   **Multi-Language Support** 🌐: Generates `README` files in both English 🇬🇧 and French 🇫🇷, ensuring broader accessibility.
-*   **Secure API Key Management** 🔑: Prompts users for their Google Gemini API key and offers an easy command to reinitialize it, keeping your credentials secure.
-*   **Effortless Integration** 🚀: Directly accessible within VS Code through intuitive commands for a smooth user experience.
-*   **Fast & Efficient** ⚡: Quickly analyzes your codebase and generates high-quality documentation, saving you valuable development time.
-*   **Dynamic Code Analysis** 🔄: Intelligently reads and understands your project structure and content to produce highly relevant and accurate documentation.
+*   **AI-Powered README Generation**: Instantly create comprehensive `README.md` files for your projects using Google Gemini.
+*   **Codebase Analysis**: Intelligently reads and understands your project's source code to generate relevant documentation.
+*   **VS Code Integration**: Seamlessly available as a command within your Visual Studio Code environment.
+*   **Google Gemini API Key Management**: Easily set and reinitialize your API key directly from VS Code.
+*   **Multi-language Support**: Provides UI messages and generates READMEs in both English and French.
+*   **Progress Indicators**: Keep track of the generation process with informative progress messages.
 
 ## 📦 Installation & Usage
 
 ### Installation
 
-1.  **Open VS Code**.
-2.  Navigate to the **Extensions** view by clicking the Square icon on the sidebar or pressing `Ctrl+Shift+X` (Windows/Linux) / `Cmd+Shift+X` (macOS).
-3.  Search for `"README.IA"` (or `LazloREADMEAI`).
-4.  Click the **Install** button.
+1.  Open Visual Studio Code.
+2.  Go to the Extensions view (`Ctrl+Shift+X` or `Cmd+Shift+X`).
+3.  Search for "README.IA".
+4.  Click "Install".
+5.  Alternatively, install directly from the [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=lazlodev.readme-ia).
 
-### Usage
+### Setup your Google Gemini API Key
 
-1.  **Open a Project Folder** in VS Code. This extension requires an active workspace to analyze your code.
-2.  **Generate README**:
-    *   Open the Command Palette by pressing `Ctrl+Shift+P` (Windows/Linux) / `Cmd+Shift+P` (macOS).
-    *   Type `README.IA` and select `README.IA: Generate README.md`.
-    *   If it's your first time or your key has been reset, you will be prompted to **Enter your Google Gemini API key**.
-    *   The extension will then analyze your code and generate a `README.md` file in your project's root directory.
-3.  **Reinitialize API Key**:
-    *   Open the Command Palette (`Ctrl+Shift+P` or `Cmd+Shift+P`).
-    *   Type `README.IA` and select `README.IA: Reinitialize gemini key`. This command will remove your stored API key, prompting you to enter it again on the next README generation.
+Before generating your first README, you'll need to provide your Google Gemini API key:
 
----
-*🤖 README generated by the extension [README.IA](https://github.com/lazlodev/README.IA) - Developed with ❤️ by [@lazlodev](https://github.com/lazlodev)*
+1.  Open the Command Palette (`Ctrl+Shift+P` or `Cmd+Shift+P`).
+2.  Type and select `README.IA: Generate README.md`.
+3.  If no API key is set, a prompt will appear asking for your Google Gemini API key.
+4.  Enter your key and press `Enter`. The key will be stored locally for future use.
+
+If you need to change or remove your API key:
+
+1.  Open the Command Palette (`Ctrl+Shift+P` or `Cmd+Shift+P`).
+2.  Type and select `README.IA: Reinitialize gemini key`.
+
+### Generating a README
+
+1.  **Open your project folder** in Visual Studio Code. (The extension needs an open folder to read your project's code).
+2.  Open the Command Palette (`Ctrl+Shift+P` or `Cmd+Shift+P`).
+3.  Type and select `README.IA: Generate README.md`.
+4.  The extension will analyze your code and generate a `README.md` file in your project's root directory.
+5.  You'll see progress notifications and a success message upon completion.
+
+## 🙏 Credits
+
+Developed with ❤️ by [@lazlodev](https://github.com/lazlodev).
