@@ -2,11 +2,11 @@
   "name": "readme-ia",
   "displayName": "README.IA",
   "description": "Générateur automatique de README propulsé par l'IA Google Gemini.",
-  "version": "0.0.1",
-  "publisher": "DE FRUYTIER LAZLO",
+  "version": "0.0.3",
+  "publisher": "lazlodev",
   "repository": {
     "type": "git",
-    "url": "https://github.com/LazloYnovLille/README.IA"
+    "url": "https://github.com/lazlodev/README.IA"
   },
   "keywords": [
     "readme",
